@@ -8,7 +8,7 @@
 
 html {
   /* Optimizado para ancho de 1920px*/
-  width: 100%;
+  width: 1920px;
   /* Podríamos asignar valor fijo y mejoraría comportamiento en pantallas de menor definición*/
   font-family: "Teko", sans-serif;
   margin: 0px;
@@ -17,6 +17,7 @@ html {
 
 section {
   width: 100%;
+  
 }
 
 /* titulos globales*/
@@ -47,19 +48,23 @@ section {
   width: 100%;
   height: 700px;
   background-color: #4d413d;
-  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/media/imagenes/header/Hero.jpg");*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/media/imagenes/header/Hero.jpg");
 }
 
 header {
   width: 100%;
-  padding-top: 20px;
-}
+  }
 
 /* menu inicio */
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 10px;
   background-color: #4d413d;
+  z-index:1;
+  
 }
 
 .lista-menu {
@@ -90,7 +95,8 @@ nav {
 .logo {
   width: 475px;
   height: 240px;
-  background-color: #16161a;
+  /*/border: 2px solid white;*/
+  
 }
 .lema {
   color: #ffffff;
@@ -154,10 +160,8 @@ nav {
 }
 
 .galeria {
-  width: 25%;
+  width: 20%;
   min-width: 304px;
-  max-width: 304px;
-  max-height: 174px;
   min-height: 174px;
   border: 8px solid #16161a;
   border-radius: 2px;
@@ -202,8 +206,6 @@ nav {
   text-align: center;
   width: 30%;
   min-width: 370px;
-  max-width: 370px;
-  max-height: 85px;
   min-height: 85px;
   margin-left: 32px;
   margin-right: 32px;
@@ -310,7 +312,7 @@ label {
 
 input {
   width: 100%;
-  max-width: 590px;
+  min-width: 590px;
   padding: 10px;
   padding-right: 0px;
   margin-bottom: 25px;
